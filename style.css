@@ -1,0 +1,1257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+    height:100vh;
+    width:100vw;
+    background-color: var(--background-color);
+    }
+    header{
+        display:flex;
+        justify-content: center;
+        margin-top:30px;
+    }
+.headerbox{
+    width:80%;
+    display:flex;
+justify-content: space-between;
+align-items: center;
+
+} 
+.sidelogo{
+    display:none;
+
+}
+.hamburger{
+    display:none;
+}
+@media (max-width:825px) {
+    .hide{
+        display: none;
+    }
+    .hamburger{
+
+        display:block;
+        height:24px;
+        width:24px;
+position:fixed;
+right:32px;
+top:10px;
+z-index: 999;
+    }
+    .sidelogo{
+        display:flex;
+        position: absolute;
+        left:10px;
+    }
+   header{
+    margin-top: 0px;
+    margin-right: 0px;
+position: relative;
+right:0px; 
+ }
+    .headerbox{padding-left: 0%;
+        margin-right:0px;
+        display: flex;
+        justify-content: flex-end;
+     
+    }
+    .part2{
+        display:flex;
+        justify-content: center;
+        gap:2px;
+    }
+    .sec2, .sec1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.cardsbox{
+    width:85%;
+    margin:auto;
+}
+    .box{
+        padding-top: 100px;
+    }
+    .part2{
+        display:flex;
+        flex-direction: column;
+        width:270px;
+    }
+   .headerbox .logobox{
+    display:none;
+   }
+   .headerbox{
+       position: fixed;
+       right:0px;
+       top: 0;
+       height: 100vh;
+       width: 60vw;
+       transform: translateX(100%);
+       transition: all 0.1s ease-in;
+    }
+    .show{
+     transform: translateX(0);
+    }
+    #colorsplash{
+        width:300px;
+        height: 300px;
+    }
+    .mainbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    #nav{
+        z-index: 999;
+        height:100vh;
+        width:300px;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        margin-right:0%;
+    }
+    #button1{
+display:none;
+    }
+    #button2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .rightbox{
+        margin-right:50px;
+    }
+.part1{
+    margin-top:300px;
+}
+.part2{
+   grid-template-columns: repeat(2,1fr);
+}
+.head1{
+    text-align: center;
+}
+
+.newsletter{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.imgbox{width:320px;}}
+
+@media (max-width:825px){
+    .mail{height:20px;}
+    .input{
+        display:flex;
+    }
+    .textbox{
+padding-bottom: 5px;
+    }
+    .finalbox{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .companyinfo{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .right{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .list{
+        text-align: center;
+    }
+    .title{
+        text-align: center;
+    }
+}
+
+.logobox{
+    display:flex;
+}
+#logoicon{
+    height:30px;
+    width:30px;
+}
+#logotext{
+    color: #333333;
+    font-weight: bold;
+    font-size: 25px;
+}
+nav{
+    display: flex;
+    gap:10px;
+    font-weight:900;
+}
+nav a{
+    color:var(--gray);
+}
+#button1 a{
+    border:1px solid #6366F1;
+background-color:#6366F1 ;
+border-radius: 3px;
+color:white;
+font-weight:500 ;
+font-size: 15px;
+padding:10px;
+}
+.content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    display:flex;
+    width:70%;
+    height:500px;
+    align-items: center;
+
+}
+
+.leftbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+.rightbox{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    justify-content: center;
+}
+#p1{
+    color: #6366F1;
+    font-weight: 800;
+    font-size: medium;
+    
+   
+}
+.rightbox img{
+    width:400px;
+    height:350px;
+    border-radius: 20px;
+   
+}
+#p2{
+    color: #333333;
+   font-size: 50px;
+   font-weight: bolder;
+   padding-bottom: 30px;
+}
+#p3{
+    color: #808080;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+#button2{
+    display:flex;
+    gap:40px;   
+}
+#startbutton{
+    border:1px solid #6366F1;
+    background-color:#6366F1 ;
+    border-radius: 3px;
+    color:white;
+    font-weight:500 ;
+    font-size: 12px;
+    padding:10px;
+
+}
+#taketourbutton{
+    border:1px solid #555 ;
+    background-color:#555 ;
+    border-radius: 3px;
+    color:white;
+    font-weight:500 ;
+    font-size: 12px;
+    padding:10px;  
+}
+.box{
+    margin-top:60px;
+ display:flex;
+ flex-direction:column;
+ align-items: center;   
+}
+.part1{
+color: #333333;
+font-weight: bold;
+font-size:30px;
+}
+.part2{
+display:flex;
+justify-content: space-between;
+padding:15px;
+margin-top: 10px;
+gap:30px;
+border: 1px solid #bfbcbc;
+background-color:#bfbcbc;
+border-radius: 6px;
+width:250px;
+}
+.sec1{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.sec2{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.logobox{
+    display: flex;
+    gap:3px;
+}
+.part2 img{
+    width:20px;
+    height:20px;
+}
+.part2 span{
+    color: #555;
+    font-weight: 600;
+}
+.cardhead{
+     margin:auto;
+     margin-top: 50px;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding-top: 10px;
+}
+.head1{
+    font-weight: bold;
+    font-size: x-large;
+}
+.head2{
+    color:#555;
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+.cardsbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    gap:15px;
+    width:50%;
+    margin:auto;
+    margin-top: 20px;
+}
+#img{
+    height:30px;
+    width:30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.card1{
+    gap:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2563eb;
+    background-color: #2563eb ;
+    border-radius: 7px;
+    padding:15px;
+}
+.card2{
+    gap:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(225, 132, 147);
+    background-color:rgb(225, 132, 147) ;
+    border-radius: 7px;
+    padding:15px;
+}
+.card3{
+    gap:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(238, 172, 48) ;
+    background-color:rgb(238, 172, 48) ;
+    border-radius: 7px;
+    padding:15px;
+}
+.card4{
+    gap:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(104, 219, 181) ;
+    background-color: rgb(104, 219, 181) ;
+    border-radius: 7px;
+    padding:15px;
+}
+.card5{
+    gap:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(80, 182, 80);
+    background-color: rgb(80, 182, 80) ;
+    border-radius: 7px;
+    padding:15px;
+}
+.card6{
+    gap:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(113, 113, 201);
+    background-color:rgb(113, 113, 201) ;
+    border-radius: 7px;
+    padding:15px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    gap:15px;
+}
+.heading{
+    
+font-weight: 800;
+}
+.info{
+    font-weight: 500;
+    text-align: center;
+}
+.greybox{
+
+    padding-bottom:10px ;
+    background-color: #e3dbdb;
+}
+.testimonial{
+   width:70%;
+    margin:auto;
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.upperbox{
+font-weight: bold;
+font-size: x-large;
+}
+.lowerbox{
+   display:grid;
+   grid-template-columns: repeat(3,1fr);
+   gap:25px;
+}
+.person{
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+
+}
+.person1{
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgb(163, 158, 158);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.259);
+    border-radius: 5px;
+    padding:10px;
+}
+.person2{
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgb(163, 158, 158);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.259);
+    border-radius: 5px;
+    padding:10px;
+}
+.person3{
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgb(163, 158, 158);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.259);
+    border-radius: 5px;
+    padding:10px;
+}
+.review{
+    color:#6d6a6a;
+    font-weight: 500;
+    font-size: small;
+    text-align: center;
+}
+.personinfo{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.name{
+    color:#6366F1;
+    font-weight: 800;
+    font-size: 15px;
+}
+.designation{
+    color:#6d6a6a;
+    font-size: small;
+    font-weight: 500;
+}
+.newsletter{
+    display: flex;
+    width:71%;
+    justify-content: center;
+    margin:auto;
+    margin-top:40px;
+}
+.textbox{
+    background-color: #e3dbdb ;
+    display: flex;
+    flex-direction: column;
+   padding-right:40px;
+   padding-left: 40px;
+    justify-content: center;
+    gap:5px;
+}
+.imgbox{
+    height:270px;
+}
+.update{
+    color:#6366F1;
+    font-size: x-large;
+    font-weight: bold;
+}
+.sign{
+    color:#6d6a6a;
+    font-size: small;
+    font-weight: 500;
+}
+.agreement{
+    color:#615e5e;
+    font-size:x-small;
+   margin-top:5px;
+}
+.mail{
+    height:31px;
+    border-radius: 5px;
+}
+.send{
+    background-color: #6366F1;
+    color:#ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+}
+.finalbox{
+    display:flex;
+  justify-content: space-between;  
+width:71%;
+margin:auto;
+margin-top:50px;
+}
+.companyinfo{
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+}
+.logobox2{
+    display:flex;
+    gap:4px;
+
+}
+#logoicon2{
+    height:30px;
+    width:30px;
+}
+#logotext2{
+    color: #333333;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 6px;
+}
+#line{
+    font-size: small;
+    font-weight: 600;
+    color: #615e5e;
+}
+.logoicons{
+    display:flex;
+    justify-content: flex-start;
+    gap:10px;
+}
+.icons{
+    width:20px;
+    height:20px;
+    color: #555;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+}
+.slip{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.title{
+    color: #333333;
+    font-weight: bold;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    color: #5a5757;
+    gap:15px;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+footer{
+   padding-bottom: 20px;
+text-align: center;
+font-size: xx-small;
+margin-top: 10px;
+}
+hr{
+    margin-top: 50px;
+}
+   a {
+    color: #333333;
+    text-decoration: none;
+}
+.rightbox:hover{
+    transform: scale(1.04);
+}
+@media (max-width: 403px) {
+    body {
+        overflow-x: hidden;
+        height: auto;
+        width: auto;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .headerbox {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sidelogo {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .sidelogo {
+        display: flex;
+        position: absolute;
+        left: 10px;
+    }
+    header {
+        margin-top: 0px;
+        margin-right: 0px;
+        position: relative;
+        right: 0px;
+    }
+    .headerbox {
+        padding-left: 0%;
+        margin-right: 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .part2 {
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+    }
+    .sec2,
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardsbox {
+        width: 85%;
+        margin: auto;
+    }
+    .box {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+    }
+    .show {
+        transform: translateX(0);
+    }
+    #colorsplash {
+        width: 300px;
+        height: 300px;
+    }
+    .mainbox {
+        justify-content: center;
+        position: relative;
+    }
+    #nav {
+        flex-direction: column;
+        gap: 10px;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0%;
+        display: flex;
+    }
+    .textbox {
+        padding-bottom: 5px;
+    }
+    .finalbox {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .right {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .title {
+        text-align: center;
+    }
+    .logobox {
+        display: flex;
+    }
+    #logoicon {
+        #button2 {
+            display: flex;
+            gap: 40px;
+        }
+        #startbutton {
+            border: 1px solid #6366F1;
+        }
+        #taketourbutton {
+            border: 1px solid #555;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            padding: 10px;
+        }
+        .box {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .part1 {
+            color: #333333;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .part2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin-top: 10px;
+            gap: 30px;
+            border: 1px solid #bfbcbc;
+            background-color: #bfbcbc;
+            border-radius: 6px;
+            width: 250px;
+        }
+        .sec1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .sec2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .logobox {
+            display: flex;
+            gap: 3px;
+        }
+        .part2 img {
+            width: 20px;
+            height: 20px;
+        }
+        .part2 span {
+            color: #555;
+            font-weight: 600;
+        }
+        .cardhead {
+            margin: auto;
+            margin-top: 50px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-top: 10px;
+        }
+        .head1 {
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .head2 {
+            color: #555;
+            font-weight: 500;
+            text-align: center;
+            font-size: 15px;
+        }
+        .cardsbox {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 50%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #img {
+            height: 30px;
+            width: 30px;
+            background-color: #ffffff;
+            border-radius: 50%;
+        }
+        .card1 {
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #2563eb;
+            background-color: #2563eb;
+            border-radius: 7px;
+            padding: 15px;
+        }
+        .card2 {
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(225, 132, 147);
+            background-color: rgb(225, 132, 147);
+            border-radius: 7px;
+            padding: 15px;
+        }
+        .card3 {
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(238, 172, 48);
+            background-color: rgb(238, 172, 48);
+            border-radius: 7px;
+            padding: 15px;
+        }
+        .card4 {
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(104, 219, 181);
+            background-color: rgb(104, 219, 181);
+            border-radius: 7px;
+            padding: 15px;
+        }
+        .card5 {
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(80, 182, 80);
+            background-color: rgb(80, 182, 80);
+            border-radius: 7px;
+            padding: 15px;
+        }
+        .card6 {
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(113, 113, 201);
+            background-color: rgb(113, 113, 201);
+            border-radius: 7px;
+            padding: 15px;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            gap: 15px;
+        }
+        .heading {
+            font-weight: 800;
+        }
+        .info {
+            font-weight: 500;
+            text-align: center;
+        }
+        .greybox {
+            padding-bottom: 10px;
+            background-color: #e3dbdb;
+        }
+        .testimonial {
+            width: 70%;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .upperbox {
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .lowerbox {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .person {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+        .person1 {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(163, 158, 158);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.259);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .person2 {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(163, 158, 158);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.259);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .person3 {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(163, 158, 158);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.259);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .review {
+            color: #6d6a6a;
+            font-weight: 500;
+            font-size: small;
+            text-align: center;
+        }
+        .personinfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .name {
+            color: #6366F1;
+            font-weight: 800;
+            font-size: 15px;
+        }
+        .designation {
+            color: #6d6a6a;
+            font-size: small;
+            font-weight: 500;
+        }
+        .newsletter {
+            display: flex;
+            width: 71%;
+            justify-content: center;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .textbox {
+            background-color: #e3dbdb;
+            display: flex;
+            flex-direction: column;
+            padding-right: 40px;
+            padding-left: 40px;
+            justify-content: center;
+            gap: 5px;
+        }
+        .imgbox {
+            height: 270px;
+        }
+        .update {
+            color: #6366F1;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .sign {
+            color: #6d6a6a;
+            font-size: small;
+            font-weight: 500;
+        }
+        .agreement {
+            color: #615e5e;
+            font-size: x-small;
+            margin-top: 5px;
+        }
+        .mail {
+            height: 31px;
+            border-radius: 5px;
+        }
+        .send {
+            background-color: #6366F1;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .finalbox {
+            display: flex;
+            justify-content: space-between;
+            width: 71%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .companyinfo {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+        }
+        .logobox2 {
+            display: flex;
+            gap: 4px;
+        }
+        #logoicon2 {
+            height: 30px;
+            width: 30px;
+        }
+        #logotext2 {
+            color: #333333;
+            font-weight: bold;
+            font-size: large;
+            display: flex;
+            align-items: flex-end;
+            padding-top: 6px;
+        }
+        #line {
+            font-size: small;
+            font-weight: 600;
+            color: #615e5e;
+        }
+        .logoicons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        .icons {
+            width: 20px;
+            height: 20px;
+            color: #555;
+        }
+        .right {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .slip {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .title {
+            color: #333333;
+            font-weight: bold;
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+            color: #5a5757;
+            gap: 15px;
+            font-weight: 500;
+            font-size: smaller;
+        }
+        footer {
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: xx-small;
+            margin-top: 10px;
+        }
+        hr {
+            margin-top: 50px;
+        }
+        a {
+            color: #333333;
+            text-decoration: none;
+        }
+        .rightbox:hover {
+            transform: scale(1.04);
+        }
+    }
+}
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    .cardsbox {
+        width: 100%;
+    }
+
+    .box {
+        padding-top: 50px;
+    }
+
+    .headerbox {
+        padding-left: 5%;
+        margin-right: 10px;
+    }
+
+    .sidelogo {
+        display: flex;
+        position: absolute;
+        margin-right: 10px;
+        right: 0;
+    }
+
+    .sec2,
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec2,
+    .sec1,
+    .cardsbox {
+        transform: none;
+        transition: none;
+    }
+
+    .show {
+        transform: none;
+    }
+
+    .greybox {
+        padding-bottom: 5px;
+    }
+
+    .lowerbox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .finalbox {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .slip {
+        gap: 10px;
+    }
+
+    .companyinfo {
+        gap: 10px;
+    }
+
+    .logobox2 {
+        justify-content: center;
+    }
+
+    #logotext2 {
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .logoicons {
+        justify-content: center;
+    }
+
+    .rightbox:hover {
+        transform: none;
+    }
+}
